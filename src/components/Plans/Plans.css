@@ -1,0 +1,81 @@
+.plans-container {
+    margin-top: -5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 17rem;
+}
+
+.plan:nth-child(2) {
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+
+.plan > svg {
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan:nth-child(2) > svg {
+    fill: white;
+}
+
+.plan:nth-child(2) > button {
+    color: var(--orange);
+}
+
+.plan >:nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.plan >:nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.benifit-sec {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.benifit-sec > img {
+    width: 1rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.feature > img {
+    width: 1.2rem;
+}
