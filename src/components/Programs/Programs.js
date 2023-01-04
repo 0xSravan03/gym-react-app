@@ -1,7 +1,8 @@
 import React from 'react';
 import './Programs.css';
 import { programsData } from '../../data/programsData';
-import Rightarrow from '../../assets/rightArrow.png'
+import Rightarrow from '../../assets/rightArrow.png';
+import uuid from 'react-uuid';
 
 const Programs = () => {
   return (
@@ -17,7 +18,7 @@ const Programs = () => {
         <div className="program-categories">
             {
                 programsData.map((program) => (
-                    <div className="category">
+                    <div className="category" key={uuid()} >
                         {program.image}
                         <span>{program.heading}</span>
                         <span>{program.details}</span>

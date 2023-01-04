@@ -29,6 +29,7 @@
     gap: 1rem;
     color: white;
     justify-content: space-between;
+    width: 40rem;
 }
 
 .category > :nth-child(1) {
@@ -53,7 +54,7 @@
     gap: 2rem;
 }
 
-.join-now img {
+.join-now > img {
     width: 1rem;
 }
 
