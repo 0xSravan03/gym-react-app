@@ -5,8 +5,11 @@ import hero_image from '../../assets/hero_image.png';
 import hero_image_back from '../../assets/hero_image_back.png';
 import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png';
+import { useState } from 'react'; 
 
 const Hero = () => {
+    const heart_rate = Math.floor(Math.random() * 10 + 110);
+    const [heartRate, ] = useState(heart_rate);
     return (
         <div className='hero'>
             <div className="left-h">
@@ -55,7 +58,7 @@ const Hero = () => {
                 <div className="heart-rate">
                     <img src={Heart} alt="heart" />
                     <span>Heart Rate</span>
-                    <span>116 bpm</span>
+                    <span>{heartRate} bpm</span>
                 </div>
 
                 {/* images */}
