@@ -189,3 +189,118 @@
     left: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 14rem;
+    }
+
+    .the-best-ad {
+        margin-top: -2rem;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-top: -0.5rem;
+    }
+
+    .hero-text > div:nth-child(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .figures {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .figures > div > span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures > div > span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .rigth-h {
+        background: none;
+    }
+
+    .rigth-h > button {
+        display: none;
+    }
+
+    .heart-rate {
+        left: 2rem;
+        top: 1.5rem;
+        gap: 0.5rem;
+        width: 7rem;
+        align-items: center;
+    }
+
+    .heart-rate > img {
+        width: 1rem;
+    }
+
+    .heart-rate >:nth-child(2) {
+        color: var(--gray);
+        font-size: small;
+    }
+
+    .heart-rate >:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    .calories {
+        left: 3rem;
+        top: 8.7rem;
+        width: 8.8rem;
+        height: 4.1rem;
+        gap: 0.5rem;
+    }
+
+    .calories > img {
+        width: 2rem;
+    }
+
+    .calories > div {
+        justify-content: space-evenly;
+    }
+
+    .calories > div >:nth-child(1) {
+        font-size: small;
+    }
+
+    .calories > div >:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .hero_image {
+        z-index: -10;
+        top: 1rem;
+        left: 13rem;
+        width: 10rem;
+    }
+
+    .hero_image_back {
+        top: 0.1rem;
+        left: 10rem;
+        width: 9rem;
+        z-index: -20;
+    }
+}
+

@@ -6,13 +6,14 @@ import whiteTick from '../../assets/whiteTick.png';
 import Rightarrow from '../../assets/rightArrow.png';
 
 const Plans = () => {
+    const mobile = window.innerWidth<=768 ? true : false;
   return (
     <div className="plans-container">
         {/* blur effect */}
         <div className="blur plans-blur-1"></div>
         <div className="blur plans-blur-2"></div>
         {/* header sections */}
-        <div className="program-header" style={{gap : '2rem'}}>
+        <div className="program-header" style={{gap : mobile ? '0.5rem' : '2rem'}}>
             <span className='stroke-text'>ready to start</span>
             <span>your journey</span>
             <span className='stroke-text'>now withus</span>

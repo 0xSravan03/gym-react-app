@@ -93,3 +93,28 @@
     top: 6rem;
     right: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .plans-container {
+        margin: -3rem;
+    }
+
+    .plans {
+        margin-top: -3rem;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+
+    .plan:nth-child(2) {
+        transform: scale(0.95);
+    }
+
+    .plan {
+        gap: 1rem;
+        transform: scale(0.95);
+    }
+
+    .plan > button {
+        margin-top: 0.8rem;
+    }
+}

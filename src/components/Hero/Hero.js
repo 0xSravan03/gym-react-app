@@ -12,6 +12,7 @@ const Hero = () => {
     const heart_rate = Math.floor(Math.random() * 10 + 110);
     const [heartRate, ] = useState(heart_rate);
     const transition = { type : 'tween', duration : 3};
+    const mobile = window.innerWidth<=768 ? true : false;
     return (
         <div className='hero'>
             <div className="blur hero-blur"></div>
@@ -20,7 +21,7 @@ const Hero = () => {
                 <div className="the-best-ad">
                     {/* animation */}
                     <motion.div
-                        initial = {{left : '238px'}}
+                        initial = {{left : mobile ? '178px' : '238px'}}
                         whileInView = {{left : '8px'}}
                         transition = {transition} >
                     </motion.div>
@@ -64,9 +65,9 @@ const Hero = () => {
             <div className="rigth-h">
                 <button className="btn">Join Now</button>
                 <motion.div className="heart-rate"
-                initial = {{right : '-1rem'}}
-                whileInView = {{right : '4rem'}}
-                transition={{...transition, type : 'spring'}}
+                    initial = {{right : '-1rem'}}
+                    whileInView = {{right : '4rem'}}
+                    transition={{...transition, type : 'spring'}}
                 >
                     <img src={Heart} alt="heart" />
                     <span>Heart Rate</span>

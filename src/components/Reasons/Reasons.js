@@ -32,15 +32,15 @@ const Reasons = () => {
                     <span>over 140+ expert coachs</span>
                 </div>
                 <div>
-                <img src={tick} alt="tick" />
+                    <img src={tick} alt="tick" />
                     <span>train smarter and faster than before</span>
                 </div>
                 <div>
-                <img src={tick} alt="tick" />
+                    <img src={tick} alt="tick" />
                     <span>1 free program for new member</span>
                 </div>
                 <div>
-                <img src={tick} alt="tick" />
+                    <img src={tick} alt="tick" />
                     <span>reliable partners</span>
                 </div>
             </div>
