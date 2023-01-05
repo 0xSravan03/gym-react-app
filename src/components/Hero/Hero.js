@@ -6,16 +6,24 @@ import hero_image_back from '../../assets/hero_image_back.png';
 import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png';
 import { useState } from 'react'; 
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     const heart_rate = Math.floor(Math.random() * 10 + 110);
     const [heartRate, ] = useState(heart_rate);
+    const transition = { type : 'tween', duration : 3};
     return (
         <div className='hero'>
+            <div className="blur hero-blur"></div>
             <div className="left-h">
                 <Header />
                 <div className="the-best-ad">
-                    <div></div>
+                    {/* animation */}
+                    <motion.div
+                        initial = {{left : '238px'}}
+                        whileInView = {{left : '8px'}}
+                        transition = {transition} >
+                    </motion.div>
                     <span>The best fitness club in the town</span>
                 </div>
                 {/* Hero Heading */}
@@ -55,11 +63,15 @@ const Hero = () => {
             </div>
             <div className="rigth-h">
                 <button className="btn">Join Now</button>
-                <div className="heart-rate">
+                <motion.div className="heart-rate"
+                initial = {{right : '-1rem'}}
+                whileInView = {{right : '4rem'}}
+                transition={{...transition, type : 'spring'}}
+                >
                     <img src={Heart} alt="heart" />
                     <span>Heart Rate</span>
                     <span>{heartRate} bpm</span>
-                </div>
+                </motion.div>
 
                 {/* images */}
                 <img src= {hero_image} alt="Hero" className='hero_image' />

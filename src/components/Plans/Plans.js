@@ -8,6 +8,9 @@ import Rightarrow from '../../assets/rightArrow.png';
 const Plans = () => {
   return (
     <div className="plans-container">
+        {/* blur effect */}
+        <div className="blur plans-blur-1"></div>
+        <div className="blur plans-blur-2"></div>
         {/* header sections */}
         <div className="program-header" style={{gap : '2rem'}}>
             <span className='stroke-text'>ready to start</span>
