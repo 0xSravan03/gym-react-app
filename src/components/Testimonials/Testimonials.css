@@ -85,7 +85,7 @@
 @media screen and (max-width: 768px) {
     .Testimonials {
         flex-direction: column;
-        margin-bottom: 19rem;
+        margin-bottom: 25rem;
     }
 
     .left-t > span:nth-of-type(2),

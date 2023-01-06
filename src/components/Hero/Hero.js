@@ -7,6 +7,8 @@ import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png';
 import { useState } from 'react'; 
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import NumberCounter from 'number-counter';
 
 const Hero = () => {
     const heart_rate = Math.floor(Math.random() * 10 + 110);
@@ -14,7 +16,7 @@ const Hero = () => {
     const transition = { type : 'tween', duration : 3};
     const mobile = window.innerWidth<=768 ? true : false;
     return (
-        <div className='hero'>
+        <div className='hero' id='hero'>
             <div className="blur hero-blur"></div>
             <div className="left-h">
                 <Header />
@@ -44,21 +46,21 @@ const Hero = () => {
                 {/* figures section */}
                 <div className='figures'>
                     <div>
-                        <span>+140</span>
+                        <span><NumberCounter end={140} start={100} delay={5} preFix='+'/></span>
                         <span>expert coaches</span>
                     </div>
                     <div>
-                        <span>+900</span>
+                        <span><NumberCounter end={900} start={850} delay={5} preFix='+'/></span>
                         <span>members joined</span>
                     </div>
                     <div>
-                        <span>+50</span>
+                        <span><NumberCounter end={50} start={20} delay={5} preFix='+'/></span>
                         <span>fitness programs</span>
                     </div>
                 </div>
                 {/* Buttons */}
                 <div className='hero-buttons'>
-                    <button className='btn'>Get Started</button>
+                    <button className='btn'><Link to='join-us' spy={true} smooth={true} >Get Started</Link></button>
                     <button className='btn'>Learn More</button>
                 </div>
             </div>

@@ -8,7 +8,7 @@ import Rightarrow from '../../assets/rightArrow.png';
 const Plans = () => {
     const mobile = window.innerWidth<=768 ? true : false;
   return (
-    <div className="plans-container">
+    <div className="plans-container" id='plans'>
         {/* blur effect */}
         <div className="blur plans-blur-1"></div>
         <div className="blur plans-blur-2"></div>
